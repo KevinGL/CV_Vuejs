@@ -1,5 +1,6 @@
 <script setup>
-const skills = ['Autonomie','Rigueur','Persévérance','Initiatives','Travail en équipe', "Leader de proposition"];
+const skills = ['Autonomie','Rigueur','Persévérance','Initiatives','Travail en équipe', "Force de proposition"];
+const projects = ['Simulateur ferroviaire', 'Moteur physique', 'IA : Apprentissage par renforcement', 'Application de visio-conférence', 'Site e-commerce'];
 </script>
 
 <template>
@@ -23,7 +24,7 @@ const skills = ['Autonomie','Rigueur','Persévérance','Initiatives','Travail en
               Coordonnées
             </h2>
             <ul class="mt-2 text-sm leading-6">
-              <li>📍 Marseille, France</li>
+              <li>📍 Marseille, France (Mobilité région PACA)</li>
               <li>✉️ <a class="text-indigo-600 hover:underline break-words" href="mailto:gaykevin.gay448@gmail.com">gaykevin.gay448@ gmail.com</a></li>
               <li>🔗 <a class="text-indigo-600 hover:underline break-words whitespace-normal" href="https://www.linkedin.com/in/kévin-gay-2aba47225" target="_blank" rel="noreferrer">linkedin.com/in/kévin-gay-2aba47225</a></li>
               <li>🐙 <a class="text-indigo-600 hover:underline break-words whitespace-normal" href="https://www.github.com/KevinGL" target="_blank" rel="noreferrer">github.com/KevinGL</a></li>
@@ -36,7 +37,6 @@ const skills = ['Autonomie','Rigueur','Persévérance','Initiatives','Travail en
               Infos diverses
             </h2>
             <ul class="mt-2 text-sm text-left list-disc list-inside">
-              <li>Mobilité : Région PACA</li>
               <li>Permis B, véhiculé</li>
             </ul>
           </section>
@@ -46,12 +46,19 @@ const skills = ['Autonomie','Rigueur','Persévérance','Initiatives','Travail en
               Soft skills
             </h2>
             <ul class="mt-2 text-sm flex flex-wrap gap-2">
-              <li v-for="(skill, idx) in skills" :class="`px-2 py-1 rounded-full ${
-                    idx % 3 === 0 ? 'bg-emerald-100 text-emerald-800' :
-                    idx % 3 === 1 ? 'bg-indigo-100 text-indigo-800' :
-                    'bg-amber-100 text-amber-800'
-                  }`">
+              <li v-for="(skill, idx) in skills" class="bg-amber-100">
                 {{ skill }}
+              </li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="projects">
+            <h2 id="projects" class="text-sm font-semibold tracking-wide text-indigo-700 uppercase">
+              Projets professionnels réalisés
+            </h2>
+            <ul class="mt-2 text-sm flex flex-wrap gap-2 text-left">
+              <li v-for="(project, idx) in projects" class="bg-amber-100">
+                {{ project }}
               </li>
             </ul>
           </section>

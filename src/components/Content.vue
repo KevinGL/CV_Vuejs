@@ -15,6 +15,19 @@ const skills =
     },
 
     {
+        title: "Sécurité",
+        desc:
+        [
+            "Double validation systématique des données (Client & Serveur)",
+            "Honeypots",
+            "Tokens CSRF",
+            "Captchas",
+            "MFA",
+            "Sensibilisé aux méthodes de phishing (Faux mails ...)",
+        ]
+    },
+
+    {
         title: "Méthodes de travail",
         desc:
         [
@@ -22,26 +35,6 @@ const skills =
             "CI/CD",
             "Workflow Git",
             "IA"
-        ]
-    },
-
-    {
-        title: "Sécurité",
-        desc:
-        [
-            "Protections frontend et backend",
-            "Honeypots",
-            "Tokens CSRF",
-            "Captchas"
-        ]
-    },
-
-    {
-        title: "Réflexes de sécurité",
-        desc:
-        [
-            "Mises à jour régulières PC",
-            "Sensibilisation aux méthodes de phishing (Faux mails ...)"
         ]
     }
 ];
@@ -52,7 +45,7 @@ const jobs =
         title: "Développeur web",
         society: "SMSBOX",
         city: "Carqueiranne",
-        date: "02 - 04/2026",
+        date: "02 - 05/2026",
         desc:
         [
             {
@@ -60,7 +53,7 @@ const jobs =
                 list:
                 [
                     "Améliorations et corrections d'une application de créations de campagnes RCS ; <b>JavaScript, Vue.js, Laravel</b>",
-                    "Maintenances de la vitrine et de l'espace client de la société ; <b>PHP natif</b>, applications organisées en <b>MVC</b>, CMS faits maison, BDD MySQL",
+                    "Maintenances de la vitrine et de l'espace client de la société ; <b>PHP natif</b>, applications organisées en <b>MVC</b>, CMS propriétaires, BDD MySQL",
                     "Développement d'une solution pour PME ; <b>Vue.js, TailwindCSS</b>, intégration de maquettes <b>Figma</b>"
                 ]
             },
@@ -76,14 +69,14 @@ const jobs =
                     "Gitflow <b>CI/CD</b>",
                     "<b>Dockerisation</b> des projets",
                     "<b>Tests unitaires avec Vitest</b>",
-                    "Utilisation de <b>l'IA</b> comme gain de temps et optimisation"
+                    "Utilisation <b>d'IA générative</b> (Productivité)"
                 ]
             }
         ]
     },
 
     {
-        title: "Travail alimentaire",
+        title: "Ascensoriste",
         society: "A+ Ascenseurs",
         city: "Marseille",
         date: "08/2025 - 01/2026",
@@ -184,14 +177,14 @@ const trainings =
     <main class="space-y-3 w-3/4">
         <section class="bg-white rounded-2xl shadow p-6 border-l-4 border-indigo-400">
             <p class="text-base font-medium">
-                Passionné par le métier de développeur web, attiré par les challenges toujours plus intéressants, aimant le travail en équipe et participer au développement de solutions
+                Développeur logiciel passionné, à la base spécialisé en C/C++ en reconversion vers le développement web via une formation Epitech
             </p>
         </section>
 
         <section class="bg-white rounded-2xl shadow p-6 border-l-4 border-emerald-400">
             <h2 class="text-base font-semibold tracking-wide text-indigo-700 uppercase">Compétences</h2>
-            <div class="mt-3 grid gap-4 sm:grid-cols-2">
-                <div v-for="skill in skills">
+            <div class="mt-3 grid gap-4 sm:grid-cols-2 text-gray-700">
+                <div v-for="skill in skills" class="p-2 bg-gray-50 rounded-lg border border-gray-200">
                     <h3 class="text-sm font-semibold text-indigo-800">{{ skill.title }}</h3>
                     <ul class="mt-2 text-sm text-left list-disc list-inside">
                         <li v-for="d in skill.desc">{{ d }}</li>
