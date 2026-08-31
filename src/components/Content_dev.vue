@@ -52,7 +52,7 @@ const jobs =
                 title: "Réalisations techniques",
                 list:
                 [
-                    "Améliorations et corrections d'une application de créations de campagnes RCS ; <b>JavaScript, Vue.js, Laravel</b>",
+                    "Améliorations et corrections d'une application de créations de campagnes de SMS / RCS ; <b>JavaScript, Vue.js, Laravel</b>",
                     "Maintenances de la vitrine et de l'espace client de la société ; <b>PHP natif</b>, applications organisées en <b>MVC</b>, CMS propriétaires, BDD MySQL",
                     "Développement d'une solution pour PME ; <b>Vue.js, TailwindCSS</b>, intégration de maquettes <b>Figma</b>"
                 ]
@@ -67,8 +67,8 @@ const jobs =
                     "<b>Merge requests</b>",
                     "Collaborations avec le <b>lead dev</b>",
                     "Gitflow <b>CI/CD</b>",
-                    "<b>Dockerisation</b> des projets",
-                    "<b>Tests unitaires avec Vitest</b>",
+                    "Projets conteneurisés avec <b>Docker</b>",
+                    "<b>Tests unitaires</b> avec Vitest",
                     "Utilisation <b>d'IA générative</b> (Productivité)"
                 ]
             }
@@ -144,7 +144,7 @@ const jobs =
 const trainings =
 [
     {
-        training: "Développeur web niveau Bac+2",
+        training: "Développeur web titre RNCP Bac+2",
         organism: "Epitech",
         year: "2022",
         city: "Marseille"
@@ -176,8 +176,8 @@ const trainings =
 <template>
     <main class="space-y-3 w-3/4">
         <section class="bg-white rounded-2xl shadow p-6 border-l-4 border-indigo-400">
-            <p class="text-base font-medium">
-                Développeur logiciel passionné, à la base spécialisé en C/C++ en reconversion vers le développement web via une formation Epitech
+            <p class="text-2xl font-medium">
+                Développeur Logiciel & Web (PHP / Symfony / C++)
             </p>
         </section>
 

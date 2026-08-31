@@ -1,6 +1,6 @@
 <script setup>
-import Content from './components/Content.vue';
-import Sidebar from './components/Sidebar.vue';
+import Content from './components/Content_tech.vue';
+import Sidebar from './components/Sidebar_tech.vue';
 
 </script>
 
