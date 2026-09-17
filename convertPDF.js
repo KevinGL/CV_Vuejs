@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer';
 
 (async () => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'});
   const page = await browser.newPage();
   await page.goto('http://localhost:5173', {waitUntil: 'networkidle0'});
   await page.pdf({ path: 'cv.pdf', format: 'A4', printBackground: true, margin: { top: "4mm", right: "2mm", bottom: "4mm", left: "2mm" } });
