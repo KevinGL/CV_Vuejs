@@ -12,7 +12,7 @@ const projects = ['Simulateur ferroviaire', 'Moteur physique', 'IA : Apprentissa
             class="w-32 h-32 rounded-full object-cover ring-4 ring-indigo-200"
           />
           <h1 class="mt-4 text-xl font-semibold text-indigo-800">Kévin Gay</h1>
-          <p class="text-sm text-gray-700">Développeur fullstack web</p>
+          <p class="text-sm text-gray-700">Développeur Backend PHP / Fullstack PHP</p>
           <p class="mt-2 inline-flex items-center rounded-full bg-emerald-100 text-emerald-800 px-2 py-0.5 text-xs font-medium">
             Contrat recherché : CDD / CDI
           </p>

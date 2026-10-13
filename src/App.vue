@@ -1,6 +1,7 @@
 <script setup>
-import Content from './components/Content_dev.vue';
-import Sidebar from './components/Sidebar_dev.vue';
+/*import Content from './components/Content_dev.vue';
+import Sidebar from './components/Sidebar_dev.vue';*/
+import Content from './components/Content_dev2.vue';
 
 </script>
 
@@ -8,11 +9,13 @@ import Sidebar from './components/Sidebar_dev.vue';
   <div class="min-h-screen bg-gray-50 text-gray-900">
     <div class="mx-auto max-w-5xl p-6 print:p-0">
       <div class="flex flex-row gap-6 text-center">
-        <Sidebar />
+        <!--<Sidebar />
+        <Content />-->
         <Content />
       </div>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
